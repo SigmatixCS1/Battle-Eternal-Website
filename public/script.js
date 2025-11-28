@@ -379,6 +379,37 @@ class CardTilt {
 }
 
 // ===================================
+// Back to Top Button
+// ===================================
+class BackToTop {
+    constructor() {
+        this.button = document.getElementById('backToTop');
+        this.init();
+    }
+    
+    init() {
+        if (!this.button) return;
+        
+        // Show/hide button on scroll
+        window.addEventListener('scroll', throttle(() => {
+            if (window.pageYOffset > 300) {
+                this.button.classList.add('visible');
+            } else {
+                this.button.classList.remove('visible');
+            }
+        }, 100));
+        
+        // Smooth scroll to top on click
+        this.button.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+}
+
+// ===================================
 // Initialize All Components
 // ===================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -390,6 +421,7 @@ document.addEventListener('DOMContentLoaded', () => {
     new EscalationTimeline();
     new CharacterCards();
     new ParallaxHero();
+    new BackToTop();
     
     // Typing effect with delay
     setTimeout(() => {
