@@ -1186,7 +1186,7 @@ section {
 .mini-byte-status {
     position: absolute;
     top: var(--spacing-md);
-    left: var(--spacing-md);
+    right: var(--spacing-md);
     padding: 0.5rem 1rem;
     background: rgba(10, 10, 15, 0.9);
     backdrop-filter: blur(10px);
