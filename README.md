@@ -2,6 +2,10 @@
 
 A stunning, modern website showcasing the Battle Eternal IP - where consciousness itself becomes the ultimate battlefield.
 
+🌐 **Live Website**: [https://sigmatixcs1.github.io/Battle-Eternal-Website/](https://sigmatixcs1.github.io/Battle-Eternal-Website/)
+
+📦 **Repository**: [https://github.com/SigmatixCS1/Battle-Eternal-Website](https://github.com/SigmatixCS1/Battle-Eternal-Website)
+
 ## 🌟 Features
 
 ### Visual Design
@@ -88,11 +92,17 @@ Your site will be available at your Firebase hosting URL.
 
 ### Alternative Deployment Options
 
-#### GitHub Pages
-1. Push this repo to GitHub
-2. Go to repository Settings → Pages
-3. Set source to main branch, `/public` folder
-4. Your site will be at `https://yourusername.github.io/Battle-Eternal-Website`
+#### GitHub Pages (Configured with GitHub Actions)
+
+**The site is already set up for automatic deployment!**
+
+To enable GitHub Pages:
+1. Go to [Repository Settings](https://github.com/SigmatixCS1/Battle-Eternal-Website/settings/pages)
+2. Under **Build and deployment**, set Source to: **GitHub Actions**
+3. The workflow will automatically deploy on every push to `main`
+4. Your site will be live at: https://sigmatixcs1.github.io/Battle-Eternal-Website/
+
+The `.github/workflows/deploy.yml` file handles automatic deployment of the `public` folder.
 
 #### Netlify
 1. Sign up at [netlify.com](https://netlify.com)
